@@ -1,0 +1,20 @@
+// color ------------
+
+// brand primary
+
+// secondary
+
+// base
+
+// responsive
+@mixin media-for-pc() {
+  @media screen and (min-width: 960px) {
+    @content;
+  }
+}
+
+@mixin media-for-tab() {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}

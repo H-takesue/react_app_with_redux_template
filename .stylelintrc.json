@@ -1,0 +1,23 @@
+{
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-prettier"
+  ],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recess-order",
+    "stylelint-config-prettier"
+  ],
+  "ignoreFiles": [
+    "**/node_modules/**"
+  ],
+  "syntax": [
+    "scss"
+  ],
+  "rules":{
+    "indentation": 2,
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "no-descending-specificity": null
+  }
+}
