@@ -8,7 +8,7 @@ import {ui} from './ui';
 const appPersistConfig = {
     key: 'sample',
     storage,
-    whitelist: ['authToken'],
+    whitelist: [],
 };
 
 const domainPersistConfig = {

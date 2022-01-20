@@ -9,7 +9,7 @@ export const AppActionTypes = {
     REFRESH_AUTH_TOKEN: 'app/refresh_auth_token',
 };
 
-export const logOut = () => ({
+export const logOut = (): LogOut => ({
     type: AppActionTypes.LOGOUT,
 });
 

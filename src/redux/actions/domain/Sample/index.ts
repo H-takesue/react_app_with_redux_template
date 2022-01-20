@@ -5,6 +5,8 @@ export const SampleActionTypes = {
     GET_SAMPLE: 'app/get_sample',
 };
 
+export type SampleActionType = SetSample & GetSample;
+
 export const setSample = (sampleStr: string): SetSample => ({
     type: SampleActionTypes.SET_SAMPLE,
     payload: { sampleStr },

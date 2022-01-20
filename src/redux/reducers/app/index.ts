@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import { AppActionTypes } from '../../actions/app';
+import {AppActionTypes, SetAuthToken, SetError} from '../../actions/app';
 import { ErrorType } from './type/error.type';
 
-const authToken = (state = '', action: any) => {
+const authToken = (state = '', action: SetAuthToken) => {
     switch (action.type) {
         case AppActionTypes.SET_AUTH_TOKEN:
             return action.payload.authToken;
@@ -11,7 +11,7 @@ const authToken = (state = '', action: any) => {
     }
 };
 
-const error = (state: ErrorType = null, action: any) => {
+const error = (state: ErrorType = null, action: SetError) => {
     switch (action.type) {
         case AppActionTypes.SET_ERROR:
             return action.payload.error;
